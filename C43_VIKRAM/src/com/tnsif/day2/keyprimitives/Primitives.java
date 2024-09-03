@@ -1,11 +1,20 @@
-package com.tnsif.day2.keyprimitives;
+public class inher {
 
-public class Primitives {
+	public class a {
+		public void show() {
+			System.out.println("hi");
+		}
+	}
+	
+	public class a1 extends a {
+		public void dhow() {
+			System.out.println("hii");
+		}
+	}
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-    int a=4;
-    int b=3;
-    int c=a+b;
-		System.out.println(c);
+		inher outer = new inher();
+		a1 obj = outer.new a1();  
+		obj.dhow();
 	}
 }
